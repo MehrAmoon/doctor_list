@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="seenItems"
+                  type="com.amoon.doctorlist.data.model.DoctorDetails"/>
+    </data>
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/Item"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView android:layout_width="54dp"
+                   android:layout_height="54dp"
+                   android:layout_marginRight="16dp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginBottom="3dp"
+                   android:layout_marginTop="3dp"
+                   android:id="@+id/image"
+                   android:background="@drawable/no_image"
+        />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:id="@+id/forks"
+                    android:text="@{seenItems.name}"
+                    app:fontFamily="@font/manropemedium"
+                    android:layout_alignParentLeft="true"
+            />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>

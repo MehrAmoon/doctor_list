@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Doctors List</string>
+    <string name="rating">Rating: %.1f</string>
+    <string name="docName">Name: </string>
+    <string name="docAddress">Adress: </string>
+    <string name="loadingDetail">Getting Details..</string>
+    <string name="docPhone">Phone :</string>
+    <string name="error">An error has occurred</string>
+    <string name="loading">Loading . . .</string>
+</resources>
